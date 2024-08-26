@@ -1,4 +1,4 @@
-local teleportKey = Enum.KeyCode.T  
+local teleportKey = Enum.KeyCode.R 
 local destination = Vector3.new(1064.5376, 153.16777, 23007.7812, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 
 local function onKeyPress(input)
@@ -14,7 +14,7 @@ end
 game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 
 
-local teleportKey = Enum.KeyCode.R  
+local teleportKey = Enum.KeyCode.T
 local destination = Vector3.new(152.372971, 429.544525, 26.2189884, 0.382687271, -0, -0.923877954, 0, 1, -0, 0.923877954, 0, 0.382687271) 
 
 local function onKeyPress(input)
@@ -33,7 +33,7 @@ game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
 local function showNotification()
     game.StarterGui:SetCore("SendNotification", {
         Title = "Loaded";  
-        Text = "T - tp to atoms(samurai)                             R - tp to map enjoy lmao";  
+        Text = "R - tp to atoms(samurai)                             T - tp to map enjoy lmao";  
         Duration = 7;  
     })
 end
